@@ -24,20 +24,24 @@ const Footer = () => {
 
             <div className="flex space-x-6">
               <a
-                href="#"
+                href="https://github.com/santanu-1005"
+                target='_blank'
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/santanu-maity-298365229/"
+                target='_blank'
+                rel='noopener noreferrer'
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Twitter"
@@ -50,7 +54,7 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 

@@ -26,38 +26,26 @@ const About = () => {
       ref={sectionRef}
       className="py-24 bg-gray-50 dark:bg-gray-900 transition-all duration-700 opacity-0 translate-y-8"
     >
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-6 max-w-4xl">
         {/* Centered Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white relative inline-block pb-3">
             About Me
             <span className="block h-1 w-20 bg-primary-600 dark:bg-primary-400 mx-auto mt-2 rounded"></span>
           </h2>
         </div>
 
-        {/* Image + Content */}
-        <div className="flex flex-col md:flex-row items-start gap-10">
-          {/* Profile Image */}
-          <div className="flex-shrink-0 mx-auto md:mx-0">
-            <img
-              src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg"
-              alt="Santanu Ajit Maity"
-              className="w-64 h-64 rounded-xl object-cover shadow-md border-4 border-white dark:border-gray-800"
-            />
-          </div>
-
-          {/* Text Content */}
-          <div className="text-gray-700 dark:text-gray-300 text-justify space-y-6 text-lg leading-relaxed">
-            <p>
-              I’m <strong>Santanu Ajit Maity</strong>, a passionate and results-driven <strong>Full Stack Developer</strong> with a strong foundation in <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I love building efficient, user-focused applications that solve real-world problems.
-            </p>
-            <p>
-              I’ve developed impactful projects including a <strong>CRM-based ticketing system</strong> and a <strong>real-time chat app</strong>, and completed internships as a <strong>Python Developer</strong> working on scalable backend solutions with tools like <strong>Flask</strong> and <strong>REST APIs</strong>.
-            </p>
-            <p>
-              I’ve honed my problem-solving skills by solving over <strong>600 DSA problems</strong> across <strong><a href="https://www.geeksforgeeks.org/user/santanumaity" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">GFG</a></strong> and <strong><a href="https://leetcode.com/santanumaity/" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">LeetCode</a></strong>. On <strong>GFG</strong>, I achieved a <strong>3-star rating</strong> and <strong>Campus Rank 15</strong>, while my consistent problem-solving on <strong>LeetCode</strong> further showcases my ability to tackle complex algorithmic challenges efficiently and with precision.
-            </p>
-          </div>
+        {/* Text Content */}
+        <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed space-y-6 text-justify">
+          <p>
+            I’m <strong>Santanu Ajit Maity</strong>, a passionate and results-driven <strong>Full Stack Developer</strong> with a strong foundation in <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I love building efficient, user-focused applications that solve real-world problems.
+          </p>
+          <p>
+            I’ve developed impactful projects including a <strong>CRM-based ticketing system</strong> and a <strong>real-time chat app</strong>, and completed internships as a <strong>Python Developer</strong> working on scalable backend solutions with tools like <strong>Flask</strong> and <strong>REST APIs</strong>.
+          </p>
+          <p>
+            I’ve honed my problem-solving skills by solving over <strong>600 DSA problems</strong> across <strong><a href="https://www.geeksforgeeks.org/user/santanumaity" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">GFG</a></strong> and <strong><a href="https://leetcode.com/santanumaity/" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">LeetCode</a></strong>. On <strong>GFG</strong>, I achieved a <strong>3-star rating</strong> and <strong>Campus Rank 15</strong>, while my consistent problem-solving on <strong>LeetCode</strong> further showcases my ability to tackle complex algorithmic challenges efficiently and with precision.
+          </p>
         </div>
       </div>
     </section>

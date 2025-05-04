@@ -24,6 +24,17 @@ const projects = [
     live: '#',
     featured: true,
   },
+  {
+    title: 'e-Mart - eCommerce Web App',
+    description:
+      'A full-featured eCommerce platform built with the MERN stack. Supports user authentication, product search, shopping cart, order management, and admin dashboard. Integrated Stripe for secure payments and deployed with performance optimization and SEO best practices.',
+    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe API'],
+    image:
+      'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    github: 'https://github.com/santanu-1005/ShopSmart.git',
+    live: '#',
+    featured: true,
+  }
   // Keep other placeholder projects if needed or remove them
 ];
 

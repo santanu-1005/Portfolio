@@ -1,61 +1,20 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
-import { gsap, SteppedEase } from 'gsap';
 
 const Home = () => {
   const textRef = useRef(null);
-  const roleRef = useRef(null);
-  const words = ['Full Stack Developer', 'MERN Stack Developer', 'Software Engineer']; // Array of words
-  const [currentWordIndex, setCurrentWordIndex] = useState(0); // State to track the current word
-  const wordChangeDelay = 50; // Short delay to change words after typing (500ms)
-  const typingDuration = 3; // Typing duration (2 seconds)
 
   useEffect(() => {
-    const tl = gsap.timeline();
-
-    const animateWord = () => {
-      const currentWord = words[currentWordIndex]; // Get current word to type
-
-      // Reset roleRef to ensure new word starts fresh
-      gsap.set(roleRef.current, {
-        width: '0',
-        opacity: 1,
-      });
-
-      // Animate the typing effect for the current word
-      tl.fromTo(
-        roleRef.current,
-        typingDuration, // Typing duration
-        { width: '0' },
-        {
-          width: '100%',
-          ease: SteppedEase.config(24), // Typing effect
-          onComplete: () => {
-            // After typing, immediately switch to the next word (no wait for typing duration)
-            gsap.to(roleRef.current, {
-              opacity: 0,
-              duration: 0.5, // Fade-out duration (0.5 seconds)
-              onComplete: () => {
-                // Change to the next word in the array
-                setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Cycle through words
-              },
-            });
-          },
-        }
-      );
-    };
-
-    // Trigger animation for the current word
-    animateWord();
-
-    // Make sure the observer triggers once the element enters the viewport
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
-        }
-      });
-    }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
     if (textRef.current) {
       observer.observe(textRef.current);
@@ -66,7 +25,7 @@ const Home = () => {
         observer.unobserve(textRef.current);
       }
     };
-  }, [currentWordIndex]); // Re-run effect when currentWordIndex changes
+  }, []);
 
   return (
     <section
@@ -84,9 +43,7 @@ const Home = () => {
             <span className="block text-blue-600 dark:text-blue-400">Santanu Ajit Maity</span>
           </h1>
           <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-8">
-            <span ref={roleRef} className="inline-block overflow-hidden whitespace-nowrap">
-              {words[currentWordIndex]} {/* Display the current word */}
-            </span>
+            Software Engineer
           </h2>
           <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10">
             I build beautiful, responsive, and user-friendly web applications with modern technologies.
@@ -101,10 +58,11 @@ const Home = () => {
               Resume
             </a>
             <a
-              href="#projects"
+              href="https://leetcode.com/u/maitysantanu/"
+              target='_blank'
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300"
             >
-              View My Work
+              LeetCode
             </a>
           </div>
         </div>
