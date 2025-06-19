@@ -50,7 +50,7 @@ const Home = () => {
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://bit.ly/44oGAfC"
+              href="https://drive.google.com/file/d/1T4EAzrKJ-GhBJNprsjlmfJKDFzUoSvXF/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300"
