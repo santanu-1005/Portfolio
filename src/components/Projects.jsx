@@ -1,40 +1,40 @@
-import React, { useEffect, useRef } from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import React, { useEffect, useRef } from "react";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: 'HelpHive - CRM Ticketing System',
+    title: "HireHive - Job Portal System",
     description:
-      'A CRM-based ticketing system using the MERN stack, handling 100+ tickets daily. Improved customer issue tracking and increased resolution efficiency by 35%. Optimized API workflows and database indexing to reduce ticket retrieval time by 40%.',
-    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      "A job portal platform built with the MERN stack, streamlining the recruitment process for both employers and job seekers. Features include job listings, application tracking, and user dashboards. Enhanced job matching algorithms and optimized database queries to reduce load times by 40%.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     image:
-      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    github: 'https://github.com/santanu-1005/HelpHive.git',
-    live: '#',
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    github: "https://github.com/santanu-1005/HireHive.git",
+    live: "hire-hive-frontend.vercel.app/",
     featured: true,
   },
   {
-    title: 'ChatCord - Real-Time Chat App',
+    title: "ChatCord - Real-Time Chat App",
     description:
-      'Real-time chat app supporting 100+ users with instant messaging and 97% uptime. Built using Node.js, Express.js, and Socket.io. Handled 5K+ messages/hour. Designed a responsive React frontend with custom UI, boosting engagement by 40% and reducing load time by 60%.',
-    technologies: ['Node.js', 'Express.js', 'Socket.io', 'React'],
+      "Real-time chat app supporting 100+ users with instant messaging and 97% uptime. Built using Node.js, Express.js, and Socket.io. Handled 5K+ messages/hour. Designed a responsive React frontend with custom UI, boosting engagement by 40% and reducing load time by 60%.",
+    technologies: ["Node.js", "Express.js", "Socket.io", "React"],
     image:
-      'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    github: 'https://github.com/santanu-1005/ChatCord',
-    live: '#',
+      "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    github: "https://github.com/santanu-1005/ChatCord",
+    live: "#",
     featured: true,
   },
   {
-    title: 'e-Mart - eCommerce Web App',
+    title: "e-Mart - E-Commerce Web App",
     description:
-      'A full-featured eCommerce platform built with the MERN stack. Supports user authentication, product search, shopping cart, order management, and admin dashboard. Integrated Stripe for secure payments and deployed with performance optimization and SEO best practices.',
-    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe API'],
+      "A full-featured eCommerce platform built with the MERN stack. Supports user authentication, product search, shopping cart, order management, and admin dashboard. Integrated Stripe for secure payments and deployed with performance optimization and SEO best practices.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     image:
-      'https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    github: 'https://github.com/santanu-1005/ShopSmart.git',
-    live: '#',
+      "https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    github: "https://github.com/santanu-1005/e-mart.git",
+    live: "https://e-mart-theta-five.vercel.app/",
     featured: true,
-  }
+  },
   // Keep other placeholder projects if needed or remove them
 ];
 
@@ -46,7 +46,7 @@ const ProjectCard = ({ project, index }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-slide-up');
+            entry.target.classList.add("animate-slide-up");
           }
         });
       },
@@ -65,7 +65,7 @@ const ProjectCard = ({ project, index }) => {
   }, []);
 
   return (
-    <div 
+    <div
       ref={cardRef}
       className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 opacity-0 transform translate-y-8"
       style={{ animationDelay: `${index * 150}ms` }}
@@ -136,7 +136,7 @@ const Projects = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            entry.target.classList.add("animate-fade-in");
           }
         });
       },

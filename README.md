@@ -16,5 +16,4 @@ Check out the live version of the portfolio here:
 - **React** – UI Library
 - **Vite** – Lightning-fast bundler
 - **JavaScript / JSX**
-- **CSS / Tailwind / Styled Components**
-- **(Optional)** Framer Motion / React Router / TypeScript
+- **CSS / Tailwind / Styled Component**

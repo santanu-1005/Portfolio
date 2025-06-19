@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -7,7 +7,7 @@ const About = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.add("opacity-100", "translate-y-0");
         }
       },
       { threshold: 0.1 }
@@ -38,13 +38,48 @@ const About = () => {
         {/* Text Content */}
         <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed space-y-6 text-justify">
           <p>
-            I’m <strong>Santanu Ajit Maity</strong>, a passionate and results-driven <strong>Full Stack Developer</strong> with a strong foundation in <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. I love building efficient, user-focused applications that solve real-world problems.
+            I’m <strong>Santanu Ajit Maity</strong>, a passionate and
+            results-driven <strong>Full Stack Developer</strong> with a solid
+            foundation in <strong>JavaScript</strong>, <strong>React</strong>,{" "}
+            <strong>Node.js</strong>, and <strong>MongoDB</strong>. I am
+            enthusiastic about building scalable, efficient, and user-centric
+            web applications that solve real-world problems and drive positive
+            impact. Through academic projects and hands-on learning, I’ve gained
+            experience in developing dynamic and interactive applications while
+            continuously improving my technical skills.
           </p>
           <p>
-            I’ve developed impactful projects including a <strong>CRM-based ticketing system</strong> and a <strong>real-time chat app</strong>, and completed internships as a <strong>Python Developer</strong> working on scalable backend solutions with tools like <strong>Flask</strong> and <strong>REST APIs</strong>.
-          </p>
-          <p>
-            I’ve honed my problem-solving skills by solving over <strong>600 DSA problems</strong> across <strong><a href="https://www.geeksforgeeks.org/user/santanumaity" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">GFG</a></strong> and <strong><a href="https://leetcode.com/santanumaity/" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400">LeetCode</a></strong>. On <strong>GFG</strong>, I achieved a <strong>3-star rating</strong> and <strong>Campus Rank 15</strong>, while my consistent problem-solving on <strong>LeetCode</strong> further showcases my ability to tackle complex algorithmic challenges efficiently and with precision.
+            During my internship as a <strong>Python Developer</strong>, I
+            worked on developing scalable backend solutions, primarily focusing
+            on creating <strong>RESTful APIs</strong> and building{" "}
+            <strong>Flask-based user interfaces</strong>. This experience
+            sharpened my ability to design and implement efficient web services
+            while collaborating on full-stack development tasks. Additionally,
+            I’ve honed my problem-solving skills by solving over{" "}
+            <strong>1000+ DSA problems</strong> on both platforms{" "}
+            <strong>
+              <a
+                href="https://www.geeksforgeeks.org/user/santanumaity"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 dark:text-primary-400"
+              >
+                GeeksforGeeks
+              </a>
+            </strong>{" "}
+            and{" "}
+            <strong>
+              <a
+                href="https://leetcode.com/santanumaity/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 dark:text-primary-400"
+              >
+                LeetCode
+              </a>
+            </strong>
+            , earning a <strong>3-star rating</strong> and a{" "}
+            <strong>Campus Rank of 12</strong>.
           </p>
         </div>
       </div>

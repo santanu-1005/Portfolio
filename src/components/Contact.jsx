@@ -155,7 +155,7 @@ const Contact = () => {
                     },
                     {
                       name: "linkedin",
-                      href: "https://www.linkedin.com/in/santanu-maity-298365229/",
+                      href: "https://linkedin.com/in/santanu-maity-298365229",
                       icon: (
                         <img
                           src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
