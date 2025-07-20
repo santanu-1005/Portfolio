@@ -3,7 +3,7 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    role: "Python Developer Intern",
+    role: "Software Developer Intern",
     company: "Lending Buddha",
     location: "India",
     duration: "Jun 2024 - Sept 2024",
